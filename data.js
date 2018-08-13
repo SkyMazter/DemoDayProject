@@ -63,6 +63,69 @@ let students = {
             period: "8th",
         },
     ]
+    },
+
+    Ronaldo: {
+    
+            firstName: "Ronaldo",
+            lastName: "Salazar",
+            grade: 12,
+            class: 2019,
+        
+            classes:[
+                {
+                    subject:"Pre-Caclus",
+                    average: 90 ,
+                    room: 311, 
+                    teacher: "Ms.Moshi",
+                    period: "1st",
+                },
+        
+                {
+                    subject:"Gym",
+                    average: 90 ,
+                    room: "C20", 
+                    teacher: "Mr.Holiday",
+                    period: "2nd",
+                },
+        
+                {
+                    subject:"English",
+                    average: 85 ,
+                    room: 400, 
+                    teacher: "Ms.Fishis",
+                    period: "3rd",
+                },
+
+                {
+                    subject:"Lunch",
+                    average: "N/A" ,
+                    room: 100, 
+                    teacher: "N/A",
+                    period: "5th",
+                },
+
+                {    
+                    subject:"AP United State History",
+                    average: 80 ,
+                    room: 301, 
+                    teacher: "Mr.Sowa",
+                    period: "6th",        
+                },
+        
+                
+                
+                {
+                    subject:"Art",
+                    average: 81,
+                    room: 211, 
+                    teacher: "Ms.B",
+                    period: "7th",
+                },
+        
+
+    ]
     }
+    
     
 }

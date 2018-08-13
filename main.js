@@ -31,6 +31,7 @@ function signUp(event){
         json = {
             USERNAME: username,
             PASSWORD: password,
+            EMAIL: ""
         }
     }
     database.push(json);
@@ -75,7 +76,18 @@ $("#logIn").click(function(){
     }else{
         alert("");
     }
+    // function currentUser(){
+    // if($("#username").val() === "Oscar"){
+    //     user = "Oscar"
+    //     return user
+    // }
+    // else{
+
+    // }
+    // return user
+    // }
 });
+// console.log(currentUser());
 
 $("#signUp").click(function(){
     if($("#signupUsername").val() !== "" && $("#signupPassword").val() !== ""){ 
@@ -98,3 +110,17 @@ $("#signUp").click(function(){
         });
     }
 });
+
+$("#updateEmail").click(function(){
+    if(user !== undefined && $("#newEmail").val().includes(".com") && $("#newEmail").val().includes("@")){
+        database.once('value', function(snapshot) {
+            snapshot.forEach(function(childSnapshot) {
+                var childData = childSnapshot.val();
+                if(user == childData.USERNAME){
+                     childData.EMAIL = $("#newEmail").val();
+                 }
+            });
+        });
+    }
+})
+

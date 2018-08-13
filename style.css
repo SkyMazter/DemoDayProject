@@ -1,7 +1,7 @@
 *{
     margin:0;
 }
-/*code of index.html */
+/*code of index.html and signup.html */
 
 .main{
     align-items: center;
@@ -32,7 +32,7 @@ a{
     font-family: 'Didact Gothic', sans-serif;
     text-decoration: none;
 }
-/* end code of index.html/
+/* end code of index.html and signup.html/
 
 /* home.html */
 
@@ -62,7 +62,14 @@ a{
     padding-left: 14%;
 }
 .whole #box #topRight #studentSchedule{
-    justify-content: center;
+    text-align: center;
 }
 
 /*end of home.html*/
+/* schedule.html */
+#schedule{
+    background-color: rgb(172, 63, 30); 
+    width: 80vw;
+    height: 80vh;
+}
+

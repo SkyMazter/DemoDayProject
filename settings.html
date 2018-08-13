@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Breez.ed</title>
+        <title>Breez.ed Settings</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
         <script>
@@ -19,23 +19,22 @@
         };
         firebase.initializeApp(config);
         </script>
-        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     </head>
     <body>
-        <div class="main">
-            <div>
-                <img src="https://s15.postimg.cc/qqcfmbb2z/e05fb658-1a68-47f3-bf71-e18e7f42059c.png">
-            </div>
-
-            <input id="username" placeholder="Username or Email">
-            <input id="password" placeholder="Password" type="password">
-            <button id="logIn">Log In</button>
-            <a href="signUp.html">Sign up</a>
+        <div>
+            <input id="firstname" placeholder = "First Name">
+            <input id="lastname" placeholder = "Last Name">
+            <input id="grade" placeholder = "Grade">
+            <input id="class" placeholder = "Class">
+            <button>Save</button>
         </div>
-        
-    
-        
-        
+
+        <div>
+            <h2>Change Email</h2>
+            <input id="newEmail" placeholder="Email">
+            <button id="updateEmail">Save</button>
+        </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="data.js"></script>
         <script src="main.js"></script>
