@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Breez.ed Settings</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Student Sign up Page</title>
+        <link rel="stylesheet" href="signUp.css">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
         <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
         <script>
         // Initialize Firebase
@@ -21,23 +22,22 @@
         </script>
     </head>
     <body>
-        <h1>Type in your new information here!</h1>
-        <div>
-            <input id="firstname" placeholder = "First Name">
-            <input id="lastname" placeholder = "Last Name">
-            <input id="grade" placeholder = "Grade">
-            <input id="class" placeholder = "Class">
-            <button>Save</button>
+        <div class="main"> 
+            <div>
+                <img src="https://s15.postimg.cc/qqcfmbb2z/e05fb658-1a68-47f3-bf71-e18e7f42059c.png">
+            </div>
+            <h1 class = "title">Student Sign Up</h1>
+            <input id="studentSignupEmail" placeholder="Email">
+            <input id="studentSignupUsername" placeholder="Username">
+            <input id="studentSignupPassword" placeholder="Password" type="password">
+            <button id="studentSignUp">Sign Up</button>
         </div>
 
-        <!-- <div>
-            <h2>Change Email</h2>
-            <input id="newEmail" placeholder="Email">
-            <button id="updateEmail">Save</button>
-        </div> -->
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="data.js"></script>
         <script src="main.js"></script>
+        <script src="data.js"></script>
     </body>
 </html>

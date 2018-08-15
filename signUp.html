@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-        <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAY0FjcjG_XdYnWBo5OQxGdao8L32BSiHo",
-            authDomain: "breezed-2d063.firebaseapp.com",
-            databaseURL: "https://breezed-2d063.firebaseio.com",
-            projectId: "breezed-2d063",
-            storageBucket: "",
-            messagingSenderId: "219538257171"
-        };
-        firebase.initializeApp(config);
-        </script>
-    </head>
-    <body>
-        <div class="main"> 
-                <div>
-                    <img src="https://s15.postimg.cc/qqcfmbb2z/e05fb658-1a68-47f3-bf71-e18e7f42059c.png">
-                </div>
-            <input id="email" placeholder="Email (optional)">
-            <input id="signupUsername" placeholder="Username">
-            <input id="signupPassword" placeholder="Password" type="password">
-            <button id="signUp">Sign Up</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signUp.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">Are you a Teacher or Student?</h1>
+    <div class = "main_content">
+
+        <div class = "icon" >
+        <img src ="http://www.tfa-academy.com/images/Teachers-For-Asia-Academy-icon-04.png">
+        <a href = "teacherSign.html">I am a Teacher</a>
         </div>
 
+        <div class = "icon" >
+        <img src = "https://move.unc.edu/files/2017/03/studenticon.png">
+        <a href = "studentSign.html"> I am a Student</a>
+        </div>
 
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="main.js"></script>
-        <script src="data.js"></script>
-    </body>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>

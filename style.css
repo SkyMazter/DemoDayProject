@@ -38,33 +38,49 @@ a{
 
 .whole{
     display:flex;
+    background-color:rgb(172, 63, 30);
+    height:100vh;
+    width:100%;
 }
-#left{
+#column{
+    width:20%;
+    height: 100vh;
     background-color: rgb(27, 42, 70);
-    width: 20vw;
-    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
 }
-#right{
-    width: 80vw;
-    height: 100vh;
-}
-#topRight{
-    background-color:rgb(23, 84, 134);
-    width: 80vw;
-    height: 20vh;
-}
-#bottomRight{
-    background-color: rgb(172, 63, 30); 
-    width: 80vw;
-    height: 80vh;
-}
-.whole #column #left #Image{
-    padding-left: 14%;
-}
-.whole #box #topRight #studentSchedule{
-    text-align: center;
+#box{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    height:100vh;
 }
 
+#topRight{
+    background-color:rgb(23, 84, 134);
+    width: 100%;
+    height: 20%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#bottomRight{
+    background-color:rgb(172, 63, 30);
+    width: 100%;
+    height: 80%;
+}
+
+
+@media(max-width: 600px){
+#column{
+    display:none;
+
+}
+#box{
+    width: 100%;
+}   
+}
 /*end of home.html*/
 /* schedule.html */
 #schedule{
@@ -72,4 +88,4 @@ a{
     width: 80vw;
     height: 80vh;
 }
-
+/* teachHome.html */

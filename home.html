@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onload="load()">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Breez.ed Home Page</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
         <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
         <script>
         // Initialize Firebase
@@ -19,32 +20,44 @@
         };
         firebase.initializeApp(config);
         </script>
+            <script>
+                function load(){
+                    if(firebase.auth().currentUser == null){
+                        window.open("index.html", "_self");
+                    }
+                }
+        </script>
     </head>
-    <body class="whole">
-        <div id="column">
-            <div id="left">
+    <body>
+        <div class="whole">
+            <div id="column">
+            
                 
                 <div id="Image">
                     <img src="https://s15.postimg.cc/qqcfmbb2z/e05fb658-1a68-47f3-bf71-e18e7f42059c.png">
                 </div>
             
-                <div>
+                <div id="welcome">
 
                 </div>
                 <div>
 
                 </div>
-            </div>
-        </div>
-        <div id="box">
-            <div id="topRight">
-                <div id="studentSchedule">Schedule</div>
-            </div>
-            <div id="bottomRight">
             
             </div>
+            <div id="box">
+                <div id="topRight">
+                    <a href = "schedule.html">Schedule</a>
+                    <a href="settings.html">Settings</a>
+                    <a id = "logOut" href="index.html">Log Out</a>
+                </div>
+                <div id="bottomRight">
+                    <div id="Board">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="data.js"></script>
         <script src="main.js"></script>

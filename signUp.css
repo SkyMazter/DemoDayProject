@@ -1,0 +1,72 @@
+.main_content{
+    align-items: center;
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 10%;
+}
+body{
+    background-color: #1b2d49;
+}
+input{
+    margin:5px;
+    width:200px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+a{
+    color:white;
+    font-family: 'Didact Gothic', sans-serif;
+    text-decoration: none;
+}
+.title{
+    color:white;
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: center;
+
+}
+.icon img{
+    width: 250px;
+    height:250px;
+    border-radius: 100%;
+    margin: 10px;
+
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 600px){
+ .main_content{
+    flex-direction: column;
+ }
+}
+.main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+input{
+    margin:5px;
+    width:200px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+#logIn{
+background-color: green;
+border-radius: 10px;
+font-family: 'Didact Gothic', sans-serif;
+width: 180px;
+height:30px;
+margin:2px;
+
+}
+a{
+    color:white;
+    font-family: 'Didact Gothic', sans-serif;
+    text-decoration: none;
+}
+
+/* teacher */

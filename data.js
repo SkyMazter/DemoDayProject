@@ -83,7 +83,7 @@ let students = {
         
                 {
                     subject:"Gym",
-                    average: 90 ,
+                    average: 85 ,
                     room: "C20", 
                     teacher: "Mr.Holiday",
                     period: "2nd",
@@ -91,8 +91,8 @@ let students = {
         
                 {
                     subject:"English",
-                    average: 85 ,
-                    room: 400, 
+                    average: 86 ,
+                    room: 210, 
                     teacher: "Ms.Fishis",
                     period: "3rd",
                 },
@@ -100,13 +100,13 @@ let students = {
                 {
                     subject:"Lunch",
                     average: "N/A" ,
-                    room: 100, 
+                    room: "Cafeteria", 
                     teacher: "N/A",
                     period: "5th",
                 },
 
                 {    
-                    subject:"AP United State History",
+                    subject:"AP United States History",
                     average: 80 ,
                     room: 301, 
                     teacher: "Mr.Sowa",
@@ -129,3 +129,4 @@ let students = {
     
     
 }
+// second database
