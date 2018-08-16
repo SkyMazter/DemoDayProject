@@ -171,19 +171,16 @@ a{
 #setting{
     color: white;
 }
-/* #bulletinBoard h1{
+#bulletinBoard h1{
     text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
     
 }
-.allMessages {
-    border-radius: 15px;
-    background: rgb(32, 46, 129);
-    padding: 20px; 
-    width: 500px;
-    height: 30px;
-    display: flex;
+.allMessages{
+    font-size: 30px;
+    display:flex;
     flex-direction: column;
-    justify-content: center;
-    
-   
-} */
+    align-items: flex-start;
+    justify-content: space-around;
+    font-family: 'Didact Gothic', sans-serif;
+}

@@ -14,9 +14,15 @@ $(document).ready( function(){
                         
                     for(let x = 0; x <  8; x++){
                             
-                        $("#board").append(
-                        "<div class = 'class'>" + 
+
+                        
+
+                         $("#board").append(
+                         "<div class = 'class'>" + 
                             
+                            
+                            
+
                         "<p>Mr.Teacher</p>" +
 
                         "<p>Subject</p>"+
@@ -27,7 +33,11 @@ $(document).ready( function(){
 
                         "<p>Room #</p>"
 
-                        + "</div>");
+                         + "</div>");
+                        
+
+
+
                             
                     }
                 }else if(type == "Teacher"){
