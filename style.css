@@ -92,7 +92,7 @@ a{
     color:white;  
     font-family: 'Didact Gothic', sans-serif;
 }
-#Board{
+#board{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
