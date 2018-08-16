@@ -89,7 +89,7 @@ $("#logIn").click(function(){
             if(i == 0){
                 alert("Logged In");
                 //here, we need to load the data for the appropriate user
-                window.open("home.html", "_self");
+                window.open("dash.html", "_self");
                
                 // $("#")
             }
