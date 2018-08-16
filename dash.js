@@ -9,7 +9,7 @@ $(document).ready( function(){
                 if(type == "Student"){
                     //pastes name
                     let word = childData.USERNAME; 
-                    $("#welcome").append("<p> Welcome " + word + "!</p>");
+                    $("#welcome").append("<p id='username'> Welcome " + word + "!</p>");
                     // pastes schedule for specific user
                         
                     for(let x = 0; x <  8; x++){

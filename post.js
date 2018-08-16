@@ -44,4 +44,6 @@ function addMessageToBoard(rowData){
     div.appendChild(h3);
     div.appendChild(p);
     allMessages.appendChild(div)  //display the message
+
+    
 }

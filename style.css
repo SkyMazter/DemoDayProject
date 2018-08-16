@@ -136,6 +136,9 @@ a{
     width: 80vw;
     height: 80vh;
 }
+.allMessages{
+    color: white;
+}
 /* teachHome.html */
 /*createpost.html*/
 #assignment{
@@ -167,4 +170,19 @@ a{
 /* settings.html */
 #setting{
     color: white;
+}
+#bulletinBoard h1{
+    text-align: center;
+    
+}
+#bulletinBoard {
+    border-radius: 15px;
+    background: rgb(32, 46, 129);
+    padding: 20px; 
+    width: 500px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    
+   
 }
