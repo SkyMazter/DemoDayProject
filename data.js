@@ -36,7 +36,15 @@ let students = {
             average: 90 ,
             room: 520, 
             teacher: "Mr.Graham",
-            period: "5th",        
+            period: "4th",        
+        },
+
+        {
+            subject:"Ap Spanish",
+            average: 90 ,
+            room: 320, 
+            teacher: "Ms.Espinal",
+            period: "5th",
         },
 
         {

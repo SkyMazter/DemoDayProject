@@ -15,23 +15,27 @@ $(document).ready( function(){
                     for(let x = 0; x <  8; x++){
                             
 
-                        
+                        let person = students.Oscar.classes[x];
+                        let teachers = person.teacher;
 
                          $("#board").append(
                          "<div class = 'class'>" + 
                             
+                        "<p>" + teachers + "</p>" +   
                             
-                            
+                        "<p>" + person.average + "</p>" +
+                        "<p>" + person.period + "</p>" +
+                        "<p>" + person.room + "</p>" +
+                        "<p>" + person.subject + "</p>"
+                        // "<p>Mr.Teacher</p>" +
 
-                        "<p>Mr.Teacher</p>" +
+                        // "<p>Subject</p>"+
 
-                        "<p>Subject</p>"+
-
-                        "<p>Period #</p>"+
+                        // "<p>Period #</p>"+
                         
-                        "<p>Grade Average</p>"+
+                        // "<p>Grade Average</p>"+
 
-                        "<p>Room #</p>"
+                        // "<p>Room #</p>"
 
                          + "</div>");
                         
