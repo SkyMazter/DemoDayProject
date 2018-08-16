@@ -35,7 +35,13 @@ function addMessageToBoard(rowData){
     //display in form NAME: MESSAGE;
     const name = data.ASSIGNMENT;
     const message = data.Description;
-    let p =document.createElement("p");
-    p.innerText = `${name}: ${message}` //specific to the html
-    allMessages.appendChild(p)  //display the message
+    let div = document.createElement("div");
+    div.classList.add("post");
+    let h3 = document.createElement("h3");
+    let p = document.createElement("p");
+    h3.innerText = name;
+    p.innerText = message //specific to the html
+    div.appendChild(h3);
+    div.appendChild(p);
+    allMessages.appendChild(div)  //display the message
 }
