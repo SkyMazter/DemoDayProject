@@ -36,22 +36,22 @@ $(document).ready( function(){
                     $("#welcome").append("<p> Welcome " + word + "!</p>");
                     $("#title").html("Class List");
 
-                    // for( let x = 0; x <  8; x++){
-                    //     $("#board").append(
-                    //         "<div class = 'class'>" + 
+                    for( let x = 0; x <  8; x++){
+                        $("#board").append(
+                            "<div class = 'class'>" + 
                                 
-                    //         "<p>Student's name</p>" +
+                            "<p>Student's name</p>" +
         
-                    //         "<p>Grade (9th,10th,11th ECT)</p>"+
+                            "<p>Grade (9th,10th,11th ECT)</p>"+
         
-                    //         "<p>Period #</p>"+
+                            "<p>Period #</p>"+
                                 
-                    //         "<p>Grade Average</p>"+
+                            "<p>Grade Average</p>"+
         
-                    //         "<p>Student ID</p>"
+                            "<p>Student ID</p>"
         
-                    //         + "</div>");
-                    //}
+                            + "</div>");
+                    }
 
                 }
             }
