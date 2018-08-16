@@ -1,6 +1,6 @@
 const users = firebase.database().ref("users");
 
-$(window).load("dash.html", function(){
+$(document).ready( function(){
     users.once('value', function(snapshot){
         snapshot.forEach(function(childSnapshot){
             var childData = childSnapshot.val();
