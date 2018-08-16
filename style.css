@@ -171,18 +171,19 @@ a{
 #setting{
     color: white;
 }
-#bulletinBoard h1{
+/* #bulletinBoard h1{
     text-align: center;
     
 }
-#bulletinBoard {
+.allMessages {
     border-radius: 15px;
     background: rgb(32, 46, 129);
     padding: 20px; 
     width: 500px;
     height: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     
    
-}
+} */
