@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Schedule</title>
+    <title>bulletinBoard</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-        <script>
+        <!-- <script>
         // Initialize Firebase
         var config = {
             apiKey: "AIzaSyAY0FjcjG_XdYnWBo5OQxGdao8L32BSiHo",
@@ -19,34 +19,51 @@
             messagingSenderId: "219538257171"
         };
         firebase.initializeApp(config);
+        </script> -->
+        <script>
+            // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyD-IMxJblbSaJbJeYOG3K8dqwcqqUH0xyA",
+            authDomain: "board-acd19.firebaseapp.com",
+            databaseURL: "https://board-acd19.firebaseio.com",
+            projectId: "board-acd19",
+            storageBucket: "board-acd19.appspot.com",
+            messagingSenderId: "326140622051"
+            };
+            firebase.initializeApp(config);
         </script>
 </head>
 <body class = "whole">
     <div id="column">
-        <div id="left">
+        
                     
             <div id="Image">
                 <img src="https://s15.postimg.cc/qqcfmbb2z/e05fb658-1a68-47f3-bf71-e18e7f42059c.png">
+            <div id="welcome">
+
             </div>
-                
-            <div>
     
             </div>
-            <div>
-    
-            </div>
-        </div>
+            
+        
     </div>
             <div id="box">
                 <div id="topRight">
-                    <div id="studentSchedule">Schedule</div>
+                        <a class="nav" href = "home.html">Home</a>
+                        <a class="nav" href="settings.html">Settings</a>
+                        <a class="nav" href = "createPost.html">Create Post</a>
+                        <a class="nav" id = "logOut" href="index.html">Log Out</a>
                 </div>
-                <div id="schedule">
-                
+                <div id="bulletinBoard">
+                        <h1>Chemistry Class</h1>
+                        <div class="allMessages">
+            
+                        </div>  
                 </div>
             </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+    <script src="bBoard.js"></script>
+    <!-- <script src="data.js"></script> -->
+    <!-- <script src="main.js"></script> -->
 </body>
 </html>

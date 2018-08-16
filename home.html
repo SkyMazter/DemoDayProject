@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" onload="load()">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +20,8 @@
         };
         firebase.initializeApp(config);
         </script>
-            <script>
-                function load(){
-                    if(firebase.auth().currentUser == null){
-                        window.open("index.html", "_self");
-                    }
-                }
-        </script>
     </head>
-    <body>
+    <body >
         <div class="whole">
             <div id="column">
             
@@ -47,19 +40,29 @@
             </div>
             <div id="box">
                 <div id="topRight">
-                    <a href = "schedule.html">Schedule</a>
-                    <a href="settings.html">Settings</a>
-                    <a id = "logOut" href="index.html">Log Out</a>
+                    <a class="nav" href = "bBoard.html">Bulletin Board</a>
+                    <a class="nav" href="settings.html">Settings</a>
+                    <a class="nav" id = "logOut" href="index.html">Log Out</a>
                 </div>
                 <div id="bottomRight">
+                    <h1 id="title"> Today's Schedule</h1>
                     <div id="Board">
-                        
-                    </div>
+
+                    </div>     
+                    
                 </div>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="data.js"></script>
         <script src="main.js"></script>
+        <script>
+                function load(){
+                    if(firebase.auth().currentUser == null){
+                        alert("Not logged in");
+                        window.open("index.html", "_self");
+                    }
+                }
+            </script>
     </body>
 </html>

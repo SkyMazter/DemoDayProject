@@ -74,7 +74,7 @@ let students = {
         
             classes:[
                 {
-                    subject:"Pre-Caclus",
+                    subject:"Pre-Calculus",
                     average: 90 ,
                     room: 311, 
                     teacher: "Ms.Moshi",
@@ -129,4 +129,4 @@ let students = {
     
     
 }
-// second database
+

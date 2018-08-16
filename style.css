@@ -1,7 +1,7 @@
 *{
     margin:0;
 }
-/*code of index.html and signup.html */
+/*code of index.html and */
 
 .main{
     align-items: center;
@@ -35,7 +35,10 @@ a{
 /* end code of index.html and signup.html/
 
 /* home.html */
-
+#title{
+    color:white;
+    font-family: 'Didact Gothic', sans-serif;
+}
 .whole{
     display:flex;
     background-color:rgb(172, 63, 30);
@@ -70,22 +73,95 @@ a{
     width: 100%;
     height: 80%;
 }
-
-
-@media(max-width: 600px){
-#column{
-    display:none;
-
+#welcome{
+    color:white;
+    font-family: 'Didact Gothic', sans-serif;
 }
-#box{
-    width: 100%;
-}   
+.class{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: white 2px solid;
+    border-radius: 10%;
+    height:200px;
+    width: 200px;
+    margin:20px;
+    padding:5px;
+    background-color:rgb(23, 84, 134);
+    color:white;  
+    font-family: 'Didact Gothic', sans-serif;
+}
+#Board{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+.nav{
+    padding: 20px;
+    background-color:rgb(19, 68, 107);
+    border: 1px solid black;
+    border-radius: 3px;
+}
+@media(max-width: 600px){
+    #column{
+        display:none;
+
+    }
+    #box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height:100vh;
+    }
+    .class{
+        background-color: rgb(172, 63, 30);
+        margin-bottom: 10px;
+    }
+    #bottomRight{
+        background-color: #1b2d49;
+    }
+    body{
+        background-color: #1b2d49;
+    }
+    textarea{
+        width: 90vw;
+    }
 }
 /*end of home.html*/
-/* schedule.html */
-#schedule{
+/* bBoard.html */
+#bulletinBoard{
     background-color: rgb(172, 63, 30); 
     width: 80vw;
     height: 80vh;
 }
 /* teachHome.html */
+/*createpost.html*/
+#assignment{
+    height: 20px;
+    width: 100px;
+}
+#description{
+    height: 150px;
+    width: 700px;
+}
+
+.textsize{
+    font-size: 30px
+}
+.userContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#submitButton{
+    background-color: green;
+    border-radius: 10px;
+    font-family: 'Didact Gothic', sans-serif;
+    width: 180px;
+    height:30px;
+    margin:2px;
+}
+@media

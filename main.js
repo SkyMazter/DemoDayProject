@@ -1,5 +1,6 @@
 const database = firebase.database().ref();
 const users = firebase.database().ref("users");
+const messages = firebase.database().ref("messages");
 let username;
 let email;
 let password;
@@ -142,21 +143,53 @@ $(window).load("home.html",function(){
             if(childData.EMAIL == firebase.auth().currentUser.email){
                 let type = childData.TYPE;
                 if(type == "Student"){
+                    //pastes name
+                    let word = childData.USERNAME; 
+                    $("#welcome").append("<p> Welcome " + word + "!</p>");
+                    // pastes schedule for specific user
+                    
+                    for(let x = 0; x <  8; x++){
+                        
+                        $("#Board").append(
+                        "<div class = 'class'>" + 
+                        
+                        "<p>Mr.Teacher</p>" +
 
+                        "<p>Subject</p>"+
+
+                        "<p>Period #</p>"+
+                        
+                        "<p>Grade Average</p>"+
+
+                        "<p>Room #</p>"
+
+                        + "</div>");
+                        
+                    }
                 }else if(type == "Teacher"){
+                    //pastes name
+                    let word = childData.USERNAME; 
+                    $("#welcome").append("<p> Welcome " + word + "!</p>");
+                    $("#title").html("Class List");
+
+                    for( let x = 0; x <  8; x++){
+                       $("#Board").append(
+                            "<div class = 'class'>" + 
+                            
+                            "<p>Student's name</p>" +
+    
+                            "<p>Grade (9th,10th,11th ECT)</p>"+
+    
+                            "<p>Period #</p>"+
+                            
+                            "<p>Grade Average</p>"+
+    
+                            "<p>Student ID</p>"
+    
+                            + "</div>");
+                    }
 
                 }
-            }
-        });
-    });
-})
-$(window).load("home.html",function(){
-    users.once('value', function(snapshot){
-        snapshot.forEach(function(childSnapshot){
-            var childData = childSnapshot.val();
-            if(childData.EMAIL == firebase.auth().currentUser.email){
-                let word = childData.USERNAME; 
-                $("#welcome").append("<p> Welcome " + word + "!</p>");
             }
         });
     });
@@ -164,4 +197,67 @@ $(window).load("home.html",function(){
 
 $("#logOut").click(function(){
     firebase.auth().signOut();
+    window.open("index.html", "_self");
+});
+
+
+$("#settings").click(function(){
+    let firstname = $("#firstname").val();
+    let lastname = $("#lastname").val();
+    let grade = $("#grade").val();
+    let classes = $("#class").val();
+    let json = {
+        "Firstname": firstname,
+        "Lastname": lastname,
+        "Grade": grade,
+        "Class": classes
+    }
+    users.once('value', function(snapshot){
+        snapshot.forEach(function(childSnapshot){
+            var childData = childSnapshot.val();
+            if(childData.EMAIL == firebase.auth().currentUser.email){
+                childSnapshot.push(json);
+            }
+        });
+    });
+});
+
+$("#updateEmail").click(function(){
+    if($("#newEmail").val() !== "" && $("#pass").val() !== ""){
+        var email = firebase.auth().currentUser.email;
+        firebase.auth().signInWithEmailAndPassword(email, $("#pass").val()).then(function(){
+            firebase.auth().currentUser.updateEmail($("#newEmail").val());
+        }).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                if (errorCode == 'auth/wrong-password') {
+                    alert('Wrong Password.');
+                }
+            });
+    }
+});
+$("#updatePassword").click(function(){
+    if($("#passw").val() !== "" && $("#newPassword").val() !== ""){
+        var email = firebase.auth().currentUser.email;
+        firebase.auth().signInWithEmailAndPassword(email, $("#passw").val()).then(function(){
+            user.updatePassword($("#newPassword").val()).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                if (errorCode == 'auth/weak-password') {
+                    alert('The password is too weak.');
+                } else {
+                    alert(errorMessage);
+                }
+        }).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                if (errorCode == 'auth/wrong-password') {
+                    alert('Wrong Password.');
+                }
+            });
+        })
+    }
 });
