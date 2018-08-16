@@ -37,7 +37,7 @@ $(window).load("dash.html", function(){
                     $("#title").html("Class List");
 
                     for( let x = 0; x <  8; x++){
-                        $("#Board").append(
+                        $("#board").append(
                             "<div class = 'class'>" + 
                                 
                             "<p>Student's name</p>" +
