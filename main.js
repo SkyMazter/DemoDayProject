@@ -137,7 +137,6 @@ $("#teacherSignUp").click(function(){
 });
 
 $(window).load("home.html", function(){
-    if(firebase.auth().currentUser == null){
         users.once('value', function(snapshot){
             snapshot.forEach(function(childSnapshot){
                 var childData = childSnapshot.val();
@@ -194,7 +193,6 @@ $(window).load("home.html", function(){
                 }
             });
         });
-    }
 })
 
 $("#logOut").click(function(){
